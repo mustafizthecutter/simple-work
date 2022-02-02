@@ -51,18 +51,21 @@
 // const sumArray = arrayTotal(numbers);
 // console.log('The total sum is: ', sumArray);
 
-function largestArray(numbers) {
-    let largest = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        const elements = numbers[i];
-        if (elements > largest) {
-            largest = elements;
+// function largestArray(numbers) {
+//     let largest = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         const elements = numbers[i];
+//         if (elements > largest) {
+//             largest = elements;
 
-        }
-    }
-    return largest;
-}
-var numbers = [23, 34, 56, 45, 24, 12];
-var arrayNumbers = largestArray(numbers);
-console.log("the highest element is: ", arrayNumbers);
-console.log("ami cahnge korlam");
+//         }
+//     }
+//     return largest;
+// }
+// var numbers = [23, 34, 56, 45, 24, 12];
+// var arrayNumbers = largestArray(numbers);
+// console.log("the highest element is: ", arrayNumbers);
+// console.log("ami cahnge korlam");
+// find the smallest element of an array by using a function.
+
+
