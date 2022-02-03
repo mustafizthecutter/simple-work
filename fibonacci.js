@@ -6,6 +6,7 @@
 // console.log(fibo);
 
 function fibonacciSeries(nums) {
+    console.log(typeof nums);
     const fibo = [0, 1];
     for (let i = 2; i <= nums; i++) {
         fibo[i] = fibo[i - 1] + fibo[i - 2];
@@ -13,5 +14,5 @@ function fibonacciSeries(nums) {
     return fibo;
 
 }
-const getElement = fibonacciSeries(10);
+const getElement = fibonacciSeries(20);
 console.log(getElement);
