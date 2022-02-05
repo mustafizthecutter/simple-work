@@ -12,9 +12,10 @@
 
 function reversedArray(text) {
     for (const letter of text) {
-        console.log(letter);
+
     }
     return letter;
 }
 const string = "Mustafizur Rahman";
-console.log();
+const result = reversedArray(string);
+console.log(result);
