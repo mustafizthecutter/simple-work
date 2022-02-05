@@ -17,5 +17,5 @@ function mularDam(mulaQuantity) {
     }
     return price;
 }
-const Totalprice = mularDam(3);
+const Totalprice = mularDam(100);
 console.log("Total Price: ", Totalprice);
