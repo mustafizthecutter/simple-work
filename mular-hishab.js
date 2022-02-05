@@ -1,12 +1,12 @@
-function mularDam() {
-    const forFirstTwoKg = 30;
-    const forRestKg = 25;
+function mularDam(mulaQuantity) {
+    let price = 0;
     if (mulaQuantity <= 2) {
-        let price = mulaQuantity * forFirstTwoKg;
-        return price;
+        price = mulaQuantity * 30;
     }
     else {
-        let price = mulaQuantity * forRestKg;
-        return price;
+        price = mulaQuantity * 25;
     }
+    return price;
 }
+const Totalprice = mularDam(3);
+console.log("Total Price: ", Totalprice);
