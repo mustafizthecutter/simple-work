@@ -12,32 +12,32 @@
 //     const vori = ana / 16;
 //     return vori;
 // }
-// const ana = 5;
+// const ana = 64;
 // const result = anaToVori(ana);
 // console.log(result);
 
 
 // Problem No: 02
-var totalOrderPrice = 0;
-function pandaCost(SingaraQuantity, SamuchaQuantity, JilapiQuantity) {
-    if (typeof SingaraQuantity != "number" || typeof SamuchaQuantity != "number" || typeof JilapiQuantity != "number") {
+// var totalOrderPrice = 0;
+// function pandaCost(SingaraQuantity, SamuchaQuantity, JilapiQuantity) {
+//     if (typeof SingaraQuantity != "number" || typeof SamuchaQuantity != "number" || typeof JilapiQuantity != "number") {
 
-        return "please enter a intezar number";
-    }
-    else if (SingaraQuantity <= 0 || SamuchaQuantity <= 0 || JilapiQuantity <= 0) {
-        return "Please enter a valid Number";
-    }
-    const SingaraPrice = 7;
-    const SamuchaPrice = 10;
-    const JilapiPrice = 15;
-    const SingaraOrderPrice = SingaraPrice * SingaraQuantity;
-    const SamuchaOrderPrice = SamuchaPrice * SamuchaQuantity;
-    const JilapiOrderPrice = JilapiPrice * JilapiQuantity;
-    const totalOrderPrice = SingaraOrderPrice + SamuchaOrderPrice + JilapiOrderPrice;
-    return totalOrderPrice;
-}
-const result = pandaCost(1, -5, 5);
-console.log(result);
+//         return "please enter a intezar number";
+//     }
+//     else if (SingaraQuantity <= 0 || SamuchaQuantity <= 0 || JilapiQuantity <= 0) {
+//         return "Please enter a valid Number";
+//     }
+//     const SingaraPrice = 7;
+//     const SamuchaPrice = 10;
+//     const JilapiPrice = 15;
+//     const SingaraOrderPrice = SingaraPrice * SingaraQuantity;
+//     const SamuchaOrderPrice = SamuchaPrice * SamuchaQuantity;
+//     const JilapiOrderPrice = JilapiPrice * JilapiQuantity;
+//     const totalOrderPrice = SingaraOrderPrice + SamuchaOrderPrice + JilapiOrderPrice;
+//     return totalOrderPrice;
+// }
+// const result = pandaCost(1, -5, 5);
+// console.log(result);
 
 // Problem No: 03
 
@@ -62,7 +62,7 @@ console.log(result);
 //     }
 //     else if (person <= 200) {
 //         firstHunderdBudget = firstHundredCost * 100;
-//         firstRestPerson = (200 - person);
+//         firstRestPerson = (person - 100);
 //         secondHunderCalculate = firstRestPerson * secondHundredCost;
 //         secondHunderdBudget = firstHunderdBudget + secondHunderCalculate;
 //         return secondHunderdBudget;
@@ -77,28 +77,28 @@ console.log(result);
 //     }
 
 // }
-// const result = picnicBudget(-1);
+// const result = picnicBudget(50);
 // console.log(result);
 
 // Problem No: 04
 
-// const names = ["mustafiz", "ahsan", "habibur", "arindam", "chiku", "julumooni"];
-// function oddFriend() {
-//     if (typeof names != "object") {
-//         return "Please enter a Character";
-//     }
-//     else if (names.length >= 15) {
-//         return "Please enter limited element";
-//     }
+const names = ["mustafiz", "ahsan", "habibur", "arindam", "chiku", "julumooni"];
+function oddFriend() {
+    if (typeof names != "object") {
+        return "Please enter a Character";
+    }
+    else if (names.length >= 10) {
+        return "Please enter limited element";
+    }
 
-//     for (const array of names) {
+    for (const array of names) {
 
-//         if (array.length % 2 == 1) {
-//             console.log(array);
-//             if (array.length >= 0) {
-//                 return array;
-//             }
-//         }
-//     }
-// }
-// oddFriend(names);
+        if (array.length % 2 == 1) {
+            console.log(array);
+            if (array.length >= 0) {
+                return array;
+            }
+        }
+    }
+}
+oddFriend(names);

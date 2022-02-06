@@ -1,10 +1,10 @@
 const names = ["ahsan", "mustafiz", "murad", "hridoy", "murad", "mustafiz"];
 function removeDuplicate(array) {
-    let latest = '';
+    let latest = names[0];
     for (const name of array) {
 
         if (latest.indexOf(name) >= 0) {
-            let result = name.slice(latest);
+            let result = name.split(latest);
             latest = result;
         }
     }
