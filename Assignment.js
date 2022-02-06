@@ -18,26 +18,26 @@
 
 
 // Problem No: 02
+var totalOrderPrice = 0;
+function pandaCost(SingaraQuantity, SamuchaQuantity, JilapiQuantity) {
+    if (typeof SingaraQuantity != "number" || typeof SamuchaQuantity != "number" || typeof JilapiQuantity != "number") {
 
-// function pandaCost(SingaraQuantity, SamuchaQuantity, JilapiQuantity) {
-//     if ((typeof SingaraQuantity !== "number" && typeof SamuchaQuantity !== "number" && typeof JilapiQuantity !== "number")) {
-
-//         return "please enter a intezar number";
-//     }
-//     else if ((SingaraQuantity <= 0) && (SamuchaQuantity <= 0) && (JilapiQuantity <= 0)) {
-//         return "Please enter a valid Number";
-//     }
-//     const SingaraPrice = 7;
-//     const SamuchaPrice = 10;
-//     const JilapiPrice = 15;
-//     const SingaraOrderPrice = SingaraPrice * SingaraQuantity;
-//     const SamuchaOrderPrice = SamuchaPrice * SamuchaQuantity;
-//     const JilapiOrderPrice = JilapiPrice * JilapiQuantity;
-//     const totalOrderPrice = SingaraOrderPrice + SamuchaOrderPrice + JilapiOrderPrice;
-//     return totalOrderPrice;
-// }
-// const result = pandaCost(6, "m", 9);
-// console.log(result);
+        return "please enter a intezar number";
+    }
+    else if (SingaraQuantity <= 0 || SamuchaQuantity <= 0 || JilapiQuantity <= 0) {
+        return "Please enter a valid Number";
+    }
+    const SingaraPrice = 7;
+    const SamuchaPrice = 10;
+    const JilapiPrice = 15;
+    const SingaraOrderPrice = SingaraPrice * SingaraQuantity;
+    const SamuchaOrderPrice = SamuchaPrice * SamuchaQuantity;
+    const JilapiOrderPrice = JilapiPrice * JilapiQuantity;
+    const totalOrderPrice = SingaraOrderPrice + SamuchaOrderPrice + JilapiOrderPrice;
+    return totalOrderPrice;
+}
+const result = pandaCost(1, -5, 5);
+console.log(result);
 
 // Problem No: 03
 
@@ -82,17 +82,23 @@
 
 // Problem No: 04
 
-const names = ["mustafiz", "ahsan", "habibur", "arindam", "chiku", "julumooni"];
-function oddFriend() {
-    for (const array of names) {
+// const names = ["mustafiz", "ahsan", "habibur", "arindam", "chiku", "julumooni"];
+// function oddFriend() {
+//     if (typeof names != "object") {
+//         return "Please enter a Character";
+//     }
+//     else if (names.length >= 15) {
+//         return "Please enter limited element";
+//     }
 
-        if (array.length % 2 == 1) {
-            console.log(array);
-            if (array.length >= 0) {
-                return array;
-            }
-        }
-    }
+//     for (const array of names) {
 
-}
-oddFriend(names);
+//         if (array.length % 2 == 1) {
+//             console.log(array);
+//             if (array.length >= 0) {
+//                 return array;
+//             }
+//         }
+//     }
+// }
+// oddFriend(names);
