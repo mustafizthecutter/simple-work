@@ -41,41 +41,58 @@
 
 // Problem No: 03
 
-function picnicBudget(person) {
-    if (typeof person != "number") {
-        return "Please enter a valid number";
-    }
-    else if (person <= 0) {
-        return "Please at least enter a number";
-    }
-    else if (person >= 300) {
-        return "Person Number is limited,So check the requirements";
+// function picnicBudget(person) {
+//     if (typeof person != "number") {
+//         return "Please enter a valid number";
+//     }
+//     else if (person <= 0) {
+//         return "Please at least enter a number";
+//     }
+//     else if (person >= 300) {
+//         return "Person Number is limited,So check the requirements";
 
-    }
-    const firstHundredCost = 5000;
-    const secondHundredCost = 4000;
-    const restCost = 3000;
+//     }
+//     const firstHundredCost = 5000;
+//     const secondHundredCost = 4000;
+//     const restCost = 3000;
 
-    if (person <= 100) {
-        firstHunderdBudget = firstHundredCost * person;
-        return firstHunderdBudget;
-    }
-    else if (person <= 200) {
-        firstHunderdBudget = firstHundredCost * 100;
-        firstRestPerson = (200 - person);
-        secondHunderCalculate = firstRestPerson * secondHundredCost;
-        secondHunderdBudget = firstHunderdBudget + secondHunderCalculate;
-        return secondHunderdBudget;
+//     if (person <= 100) {
+//         firstHunderdBudget = firstHundredCost * person;
+//         return firstHunderdBudget;
+//     }
+//     else if (person <= 200) {
+//         firstHunderdBudget = firstHundredCost * 100;
+//         firstRestPerson = (200 - person);
+//         secondHunderCalculate = firstRestPerson * secondHundredCost;
+//         secondHunderdBudget = firstHunderdBudget + secondHunderCalculate;
+//         return secondHunderdBudget;
 
-    }
-    else {
-        firstHunderdBudget = firstHundredCost * 200;
-        secondHunderdBudget = firstRestPerson * secondHundredCost;
-        restHundreadCalculate = person * restCost;
-        restBudget = firstHunderdBudget + secondHunderdBudget + restHundreadCalculate;
-        return restBudget;
+//     }
+//     else {
+//         firstHunderdBudget = firstHundredCost * 200;
+//         secondHunderdBudget = firstRestPerson * secondHundredCost;
+//         restHundreadCalculate = person * restCost;
+//         restBudget = firstHunderdBudget + secondHunderdBudget + restHundreadCalculate;
+//         return restBudget;
+//     }
+
+// }
+// const result = picnicBudget(-1);
+// console.log(result);
+
+// Problem No: 04
+
+const names = ["mustafiz", "ahsan", "habibur", "arindam", "chiku", "julumooni"];
+function oddFriend() {
+    for (const array of names) {
+
+        if (array.length % 2 == 1) {
+            console.log(array);
+            if (array.length >= 0) {
+                return array;
+            }
+        }
     }
 
 }
-const result = picnicBudget(-1);
-console.log(result);
+oddFriend(names);
