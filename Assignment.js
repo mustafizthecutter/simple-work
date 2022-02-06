@@ -42,6 +42,16 @@
 // Problem No: 03
 
 function picnicBudget(person) {
+    if (typeof person != "number") {
+        return "Please enter a valid number";
+    }
+    else if (person <= 0) {
+        return "Please at least enter a number";
+    }
+    else if (person >= 300) {
+        return "Person Number is limited,So check the requirements";
+
+    }
     const firstHundredCost = 5000;
     const secondHundredCost = 4000;
     const restCost = 3000;
@@ -67,5 +77,5 @@ function picnicBudget(person) {
     }
 
 }
-const result = picnicBudget(150);
+const result = picnicBudget(-1);
 console.log(result);
